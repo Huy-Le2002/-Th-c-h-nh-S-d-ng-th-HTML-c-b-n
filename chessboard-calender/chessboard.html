@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* th:nth-child(odd){
+        background-color: red;
+    } */
+    .odd{
+        background-color: white;
+    }
+    .even{
+        background-color: black;
+    }
+    table{
+        width: 800px;
+        height: 800px;
+        background-color: #ffc107;
+        border-style: ridge;
+    }
+    td{
+        width: 100px;
+        height: 100px;
+        padding:10px;
+    }
+    th {
+        padding: 0;
+    }
+</style>
+<body>
+    <div>
+        <table>
+            <tbody>
+            <tr>
+                <th></th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+            </tr>
+            <tr>
+                <th>A</th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+            </tr>
+            <tr>
+                <th>B</th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+            </tr>
+            <tr>
+                <th>C</th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+            </tr>
+            <tr>
+                <th>D</th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+            </tr>
+            <tr>
+                <th>E</th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+            </tr>
+            <tr>
+                <th>F</th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+            </tr>
+            <tr>
+                <th>G</th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+            </tr>
+            <tr>
+                <th>H</th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+                <th class="even"></th>
+                <th class="odd"></th>
+            </tr>
+            
+        </tbody>     
+        </table>
+
+    </div>
+    <!-- <script>
+        let table = document.getElementsByTagName("table")[0];
+        let trs = table.children[0].children;
+        console.log(trs);
+        debugger;
+        for(let i=1; i<= trs.length;i++){
+            let tr = trs[i];
+            for(let j=1; j< tr.children.length; j++){
+                if(i%2 != 0){
+                    if(j%2 != 0){
+                        console.log(tr.children[j]);
+                        tr.children[j].classList.add('odd');
+                    }
+                    else{
+                        tr.children[j].classList.add('even');
+                    }
+                }
+                else{
+                    if(j%2 != 0){
+                        tr.children[j].classList.add('even');
+                    }
+                    else{
+                        tr.children[j].classList.add('odd');
+                    }
+                }
+            }
+
+        }
+    </script> -->
+
+    
+
+</body>
+</html>
